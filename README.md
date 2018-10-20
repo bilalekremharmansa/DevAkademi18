@@ -1,1 +1,11 @@
-This application is developed under DevAkademi18
+Maven ile proje build edildiği için proje diğer ortamlarda da kolaylıkla çalıştırılabilir konumdadır.
+
+Proje ilk saatlerinde backend projesi olarak başlanmıştır. String ile ilan sorgusu, gün içerisinde en çok gösterilen reklam, en çok click alan reklam, tıklayan kişilerin bilgisi(analiz edilebilmesi için), tarihler arasında sorgu yapılacak şekilde bir kaç hedef konulmuştur. Lakin datayı kısıtlı açıdan kullanacağımı düşündüğüm için projeyi JavaFX ile desteklemek istedim. Böylece GUI de oluşmuş oldu. 
+
+Proje ilk başta Retrofit ile API üzerinden çalışacak şekilde düşünülmüştür. Lakin, sonradan "all_data.json" dosyası daha kullanışlı göründüğünden dolayı, bu dosya üzerinde çalışılmaya başlanmıştır. JSON'ı pars etmek için Gson kütüphanesi kullanılmıştır. Class isimleri ve tasarım açısından kod iyi dizayn edilmemiştir, buna sebep olarak vakit olduğunu söyleyebilirim. Dosya üzerinde ki işlemler "analyzer" paketi altında bulunmaktadır. DataSource sınıfı json dosyasını yükleyip Java objesine parse etmektedir. GeneralAnalyzer buradaki veriyi kullanarak; Ad collectionı veya stream'i(AllData) döndürmektedir. Metod isimlerinden ne metodların ne yaptığı anlaşılmaktadır.
+
+JavaFX API'ı kullanılarak yukarıda bahsi geçen işlemler görselleştirilmiştir. Kullanıcıyı filtre sayfası karşılamaktadır. Şuan sadece iki tip filtre var ve ayrı ayrı yapılmaları gerekmektedir. Yapılan filtreleme sonucunda Ad sınıfları bir sonraki View'e verilir. Burada filtrelenen reklam verileri bulunmaktadır. Ad::toString() metodu implement edilerek, "title -- description" patternini kullanan bir gösterim kullanıcıya sunulmaktadır. Kullanıcı bir Ad seçtiği taktirde, Ad lerin detayları bulunan yeni bir sayfa açılmaktadır. Burada Ad ile ilgili bilgilerin yanı sıra, kullanıcılar ile alakalı grafikler bulunmaktadır. AdAnalyzer'dan dönen veriler burada görselleştirilmiştir. 
+
+Data mining ve machine learning konularını yeni yeni araştırdığım için proje kapsamında kullanamadım. Aslında bu proje için kullanıcı analizleri yapabilen, teklif üretebilen, aynı kullanıcı tiplerini gruplayan ve aklıma gelmeyen bir çok implementasyon yapılabilirdi.
+Yukarıda da belirttiğim gibi backend tarafında işlevsel örnekler bulmadığım için backend+front end gibi bir proje oldu. Veri işlenip, Spring Boot gibi bir framework ile API haline de dönüştürülebilirdi.
+Süreden dolayı viewler güzel bir şekilde oluşturulmadı, yazdığım kodlar da bu nedenle karmaşık veya güzel tasarlanılmamış/düşünülmemiş olabilir.

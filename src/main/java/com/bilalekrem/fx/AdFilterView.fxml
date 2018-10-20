@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="1000.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="53.0" layoutY="87.0" text="By title" />
+            <JFXButton fx:id="btFilterString" layoutX="321.0" layoutY="162.0" style="-fx-background-color: #aaafff;" text="Filter" />
+            <Label layoutX="53.0" layoutY="252.0" text="Event type" />
+            <JFXTextField fx:id="tfTitle" layoutX="225.0" layoutY="74.0" />
+            <JFXButton fx:id="btFilterInteract" layoutX="331.0" layoutY="342.0" style="-fx-background-color: #aaafff;" text="Filter" />
+            <Label layoutX="47.0" layoutY="40.0" text="Each query in these page is single-query. Two filter can not be queried for now due to deadline" />
+            <Label layoutX="53.0" layoutY="120.0" text="By description" />
+            <JFXTextField fx:id="tfDesc" layoutX="225.0" layoutY="107.0" />
+            <JFXRadioButton fx:id="rbImpression" layoutX="182.0" layoutY="287.0" text="Impression" />
+            <JFXRadioButton fx:id="rbClick" layoutX="182.0" layoutY="320.0" text="Click" />
+            <JFXRadioButton fx:id="rbAll" layoutX="182.0" layoutY="260.0" text="All" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
