@@ -1,4 +1,4 @@
-Maven ile proje build edildiği için proje diğer ortamlarda da kolaylıkla çalıştırılabilir konumdadır.
+Maven ile proje build edildiği için proje diğer ortamlarda da kolaylıkla çalıştırılabilir konumdadır. MainClass'ı tanımaz ise com.bilalekrem.Main.java da start alabilirsiniz.
 
 Proje ilk saatlerinde backend projesi olarak başlanmıştır. String ile ilan sorgusu, gün içerisinde en çok gösterilen reklam, en çok click alan reklam, tıklayan kişilerin bilgisi(analiz edilebilmesi için), tarihler arasında sorgu yapılacak şekilde bir kaç hedef konulmuştur. Lakin datayı kısıtlı açıdan kullanacağımı düşündüğüm için projeyi JavaFX ile desteklemek istedim. Böylece GUI de oluşmuş oldu. 
 
