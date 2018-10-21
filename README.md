@@ -9,3 +9,5 @@ JavaFX API'ı kullanılarak yukarıda bahsi geçen işlemler görselleştirilmi�
 Data mining ve machine learning konularını yeni yeni araştırdığım için proje kapsamında kullanamadım. Aslında bu proje için kullanıcı analizleri yapabilen, teklif üretebilen, aynı kullanıcı tiplerini gruplayan ve aklıma gelmeyen bir çok implementasyon yapılabilirdi.
 Yukarıda da belirttiğim gibi backend tarafında işlevsel örnekler bulmadığım için backend+front end gibi bir proje oldu. Veri işlenip, Spring Boot gibi bir framework ile API haline de dönüştürülebilirdi.
 Süreden dolayı viewler güzel bir şekilde oluşturulmadı, yazdığım kodlar da bu nedenle karmaşık veya güzel tasarlanılmamış/düşünülmemiş olabilir.
+
+21 Ekim Notu: Yazılım maratonu süresinde yazmayı unutmuşum, son dakikalarda ilk ekrana(filtrenin seçildiği) dönülmediğini farketmiştim. İlk ekrana dönmek için uygulamayı tekrar kapatıp açmak gerekmekte.
